@@ -27,18 +27,31 @@ def parse_courses(soup):
   for title in course_titles:
     print(title.text)
 
-def parse_prereq(soup):
+def parse_course_data(soup):
     
     course_prereq = soup.find_all('div', class_="courseblock")
     
     for prereq in course_prereq:
         
         course_block = prereq.select_one('div.coursedescadditional')
+        course_title = prereq.select_one('span.courseblocktitle')
         
+        if course_title:
+            for line in course_title.get_text(separator="\n").splitlines():
+                print(line.strip())
+                
+                
         if course_block:
-            for line in course_block.get_text(separator="\n").splitlines():
+            lines = course_block.get_text(separator="\n").splitlines()
+            for i in range(len(lines)):
+                
+                line = lines[i].strip()
+                
                 if line.strip().startswith("Prerequisite(s):"):
-                    print(line.strip())
+                    if i + 1 < len(lines):
+                        next_line = lines[i + 1].strip()
+                        print(f"{line} {next_line}")
+        
             
 
 if __name__ == "__main__":
@@ -46,4 +59,4 @@ if __name__ == "__main__":
   if soup:
     print("Successfully fetched Carleton COMP page!")
     #parse_courses(soup)
-    parse_prereq(soup)
+    parse_course_data(soup)
