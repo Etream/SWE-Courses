@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup # beautiful soup for parsing CU courses
-import requests # later for our URL
+import requests 
+import re # Regex 
 
 # First: need to get the URL for soft eng related courses
 
@@ -15,42 +16,40 @@ def get_course_page():
     
     return BeautifulSoup(response.text, 'html.parser')
 
-def parse_courses(soup):
-  # TODO: You need to inspect the HTML structure of Carleton's calendar
-  # and find how individual courses and their prerequisites are wrapped.
-  # Hint: Look for divs, blocks, or class names containing course details.
-  
-  # Find all nested elements across the page
-  course_titles = soup.select('div.courseblock span.courseblocktitle')
-  
-  
-  for title in course_titles:
-    print(title.text)
+#TODO: Clean up code b/c it handles two separate loops
+
 
 def parse_course_data(soup):
+    # Get the courseblock containers
     
-    course_prereq = soup.find_all('div', class_="courseblock")
+    course_blocks = soup.find_all('div', class_="courseblock")
     
-    for prereq in course_prereq:
+    for block in course_blocks:
         
-        course_block = prereq.select_one('div.coursedescadditional')
-        course_title = prereq.select_one('span.courseblocktitle')
+        # titles and title elements for each iteration of courseblocks
+        
+        course_title = block.select_one('span.courseblocktitle')
+        
         
         if course_title:
-            for line in course_title.get_text(separator="\n").splitlines():
-                print(line.strip())
+            title_text = course_title.get_text(separator=" ", strip=True).replace("\xa0", " ")
+            print(f"\n----- {title_text} -----")
+        
+        # Clean up the description of the prerequisites for each iteration
                 
+        course_prereq = block.select_one('div.coursedescadditional')
                 
-        if course_block:
-            lines = course_block.get_text(separator="\n").splitlines()
-            for i in range(len(lines)):
-                
-                line = lines[i].strip()
-                
-                if line.strip().startswith("Prerequisite(s):"):
-                    if i + 1 < len(lines):
-                        next_line = lines[i + 1].strip()
-                        print(f"{line} {next_line}")
+        if course_prereq:  #Switching to Regex instead of index, because text is getting cutoff when new line
+            prereq_desc = course_prereq.get_text(separator=" ", strip=True)
+            
+            # Use Regex to find "Prerequisite(s):" and get every text after until next keyword
+            
+            match = re.search(r"Prerequisite\(s\):\s*(.*?)(?=\b(?:Lectures|Laboratory|Precludes|Also listed)\b|$)", prereq_desc) 
+            
+            if match:
+                print(f"Prerequisite(s): {match.group(1).strip()}")
+            
+            
         
             
 
@@ -58,5 +57,4 @@ if __name__ == "__main__":
   soup = get_course_page()
   if soup:
     print("Successfully fetched Carleton COMP page!")
-    #parse_courses(soup)
     parse_course_data(soup)
