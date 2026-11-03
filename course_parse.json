@@ -1,0 +1,386 @@
+[
+   {
+      "code": "SYSC 1006",
+      "credit": "0.5 credit",
+      "title": "Foundations of Imperative Programming",
+      "raw_prerequisites": "ECOR 1031 or (ECOR 1041 and ECOR 1042), all with a minimum grade of C- ."
+   },
+   {
+      "code": "SYSC 2004",
+      "credit": "0.5 credit",
+      "title": "Object-Oriented Software Development",
+      "raw_prerequisites": "SYSC 1006 or SYSC 2006 ."
+   },
+   {
+      "code": "SYSC 2006",
+      "credit": "0.5 credit",
+      "title": "Foundations of Imperative Programming",
+      "raw_prerequisites": "ECOR 1031 or (ECOR 1041 and ECOR 1042), all with a minimum grade of C- ."
+   },
+   {
+      "code": "SYSC 2010",
+      "credit": "0.5 credit",
+      "title": "Programming Project",
+      "raw_prerequisites": "ECOR 1031 with a minimum grade of C- , and enrolment in Biomedical and Electrical Engineering or Communications Engineering."
+   },
+   {
+      "code": "SYSC 2100",
+      "credit": "0.5 credit",
+      "title": "Algorithms and Data Structures",
+      "raw_prerequisites": "SYSC 1006 or SYSC 2006 ."
+   },
+   {
+      "code": "SYSC 2310",
+      "credit": "0.5 credit",
+      "title": "Introduction to Digital Systems",
+      "raw_prerequisites": "ECOR 1031 , ECOR 1032 , MATH 1104 , PHYS 1004 and enrolment in Computer Systems Engineering, Communications Engineering, or Software Engineering."
+   },
+   {
+      "code": "SYSC 2320",
+      "credit": "0.5 credit",
+      "title": "Introduction to Computer Organization and Architecture",
+      "raw_prerequisites": "ELEC 2607 or SYSC 2310 ."
+   },
+   {
+      "code": "SYSC 2510",
+      "credit": "0.5 credit",
+      "title": "Probability, Statistics and Random Processes for Engineers",
+      "raw_prerequisites": "MATH 1004 and MATH 1104 ."
+   },
+   {
+      "code": "SYSC 3006",
+      "credit": "0.5 credit",
+      "title": "Computer Organization",
+      "raw_prerequisites": "( SYSC 1006 or SYSC 2006 ) and ( SYSC 2310 or ELEC 2607 )."
+   },
+   {
+      "code": "SYSC 3010",
+      "credit": "0.5 credit",
+      "title": "Computer Systems Development Project",
+      "raw_prerequisites": "SYSC 2100 and SYSC 3310 (may be taken concurrently), and enrolment in Computer Systems Engineering."
+   },
+   {
+      "code": "SYSC 3020",
+      "credit": "0.5 credit",
+      "title": "Introduction to Software Engineering",
+      "raw_prerequisites": "SYSC 2004 ."
+   },
+   {
+      "code": "SYSC 3101",
+      "credit": "0.5 credit",
+      "title": "Programming Languages",
+      "raw_prerequisites": "SYSC 2004 ."
+   },
+   {
+      "code": "SYSC 3110",
+      "credit": "0.5 credit",
+      "title": "Software Development Project",
+      "raw_prerequisites": "SYSC 2004 and SYSC 2100 , and enrolment in Software Engineering."
+   },
+   {
+      "code": "SYSC 3120",
+      "credit": "0.5 credit",
+      "title": "Software Requirements Engineering",
+      "raw_prerequisites": "SYSC 2004 and enrolment in Software Engineering."
+   },
+   {
+      "code": "SYSC 3200",
+      "credit": "0.5 credit",
+      "title": "Industrial Engineering",
+      "raw_prerequisites": "MATH 1004 and MATH 1104."
+   },
+   {
+      "code": "SYSC 3203",
+      "credit": "0.5 credit",
+      "title": "Bioelectrical Systems",
+      "raw_prerequisites": "MATH 1005 and ( ELEC 2507 or ELEC 3605 ) and enrolment in Biomedical and Electrical Engineering or Biomedical and Mechanical Engineering."
+   },
+   {
+      "code": "SYSC 3303",
+      "credit": "0.5 credit",
+      "title": "Real-Time Concurrent Systems",
+      "raw_prerequisites": "For students in the Faculty of Engineering and Design: SYSC 2100 , and SYSC 4001 , and enrolment in Software Engineering, or permission of the Department. For students in Computer Science: COMP 2401 , COMP 2402 , and COMP 3000 ."
+   },
+   {
+      "code": "SYSC 3310",
+      "credit": "0.5 credit",
+      "title": "Introduction to Real-Time Systems",
+      "raw_prerequisites": "( SYSC 1006 or SYSC 2006 ) with a minimum grade of C- and ( SYSC 2320 or SYSC 3006 )."
+   },
+   {
+      "code": "SYSC 3313",
+      "credit": "0.5 credit",
+      "title": "Real-Time Embedded Systems",
+      "raw_prerequisites": "SYSC 2100 and SYSC 4001 and enrolment in Computer Systems Engineering, or permission of the Department."
+   },
+   {
+      "code": "SYSC 3320",
+      "credit": "0.5 credit",
+      "title": "Computer Systems Design",
+      "raw_prerequisites": "SYSC 3310 and enrolment in Computer Systems Engineering."
+   },
+   {
+      "code": "SYSC 3500",
+      "credit": "0.5 credit",
+      "title": "Signals and Systems",
+      "raw_prerequisites": "MATH 1005 and enrolment in Communications Engineering."
+   },
+   {
+      "code": "SYSC 3501",
+      "credit": "0.5 credit",
+      "title": "Communication Theory",
+      "raw_prerequisites": "SYSC 3600 or SYSC 3610 ."
+   },
+   {
+      "code": "SYSC 3503",
+      "credit": "0.5 credit",
+      "title": "Communication Theory II",
+      "raw_prerequisites": "( SYSC 3500 or SYSC 3600 ) and SYSC 2510 , and enrolment in Communications Engineering."
+   },
+   {
+      "code": "SYSC 3512",
+      "credit": "0.5 credit",
+      "title": "Computer Communications",
+      "raw_prerequisites": "ECOR 2050 or SYSC 2510 (may be taken concurrently), and enrolment in Biomedical and Electrical, Electrical, Communications, Computer Systems, Software, or Sustainable and Renewable Energy Engineering."
+   },
+   {
+      "code": "SYSC 3522",
+      "credit": "0.5 credit",
+      "title": "Communications Software Laboratory",
+      "raw_prerequisites": "( SYSC 1006 or SYSC 2006 ) with a minimum grade of C- , and ( SYSC 3512 or SYSC 4602 )."
+   },
+   {
+      "code": "SYSC 3600",
+      "credit": "0.5 credit",
+      "title": "Systems and Simulation",
+      "raw_prerequisites": "ECOR 1031 , ECOR 1032 , ECOR 1033 , ECOR 1034 , MATH 1005 ."
+   },
+   {
+      "code": "SYSC 3610",
+      "credit": "0.5 credit",
+      "title": "Biomedical Systems, Modeling, and Control",
+      "raw_prerequisites": "ECOR 1031 , ECOR 1032 , ECOR 1033 , ECOR 1034 , MATH 1005 , and enrolment in Biomedical and Electrical Engineering or Biomedical and Mechanical Engineering."
+   },
+   {
+      "code": "SYSC 3999",
+      "credit": "0.0 credit",
+      "title": "Co-operative Work Term",
+      "raw_prerequisites": null
+   },
+   {
+      "code": "SYSC 4001",
+      "credit": "0.5 credit",
+      "title": "Operating Systems",
+      "raw_prerequisites": "( SYSC 1006 or SYSC 2006 ) with a minimum grade of C- , and ( SYSC 2320 or SYSC 3006 )."
+   },
+   {
+      "code": "SYSC 4005",
+      "credit": "0.5 credit",
+      "title": "Discrete Simulation/Modeling",
+      "raw_prerequisites": "ECOR 1031 and ( ECOR 2050 or SYSC 2510 or STAT 2605 or STAT 3502 ), or permission of the Department. Also offered at the graduate level, with different requirements, as SYSC 5001 , for which additional credit is precluded."
+   },
+   {
+      "code": "SYSC 4006",
+      "credit": "0.5 credit",
+      "title": "Introduction to Systems Programming",
+      "raw_prerequisites": "ECOR 1031 with a minimum grade of C- or enrolment in in the M.Eng. Program in Electrical & Computer Engineering."
+   },
+   {
+      "code": "SYSC 4101",
+      "credit": "0.5 credit",
+      "title": "Software Validation",
+      "raw_prerequisites": "SYSC 3120 or SYSC 3020 ."
+   },
+   {
+      "code": "SYSC 4102",
+      "credit": "0.5 credit",
+      "title": "Performance Engineering",
+      "raw_prerequisites": "( ECOR 2050 or STAT 3502 ) and SYSC 4001 . Also offered at the graduate level, with different requirements, as SYSC 5101 , for which additional credit is precluded."
+   },
+   {
+      "code": "SYSC 4106",
+      "credit": "0.5 credit",
+      "title": "The Software Economy and Project Management",
+      "raw_prerequisites": "ECOR 1031 , ECOR 1032 , ECOR 1033 , ECOR 1034 , ECOR 1055 , ECOR 1056 , and ECOR 1057 ; and SYSC 3120 (may be taken concurrently), enrolment in Software Engineering; or COMP 3004 and enrolment in the Bachelor of Computer Science."
+   },
+   {
+      "code": "SYSC 4111",
+      "credit": "0.5 credit",
+      "title": "Formal Methods in Software Engineering",
+      "raw_prerequisites": "COMP 1805 , SYSC 3120 , and SYSC 4001 ."
+   },
+   {
+      "code": "SYSC 4120",
+      "credit": "0.5 credit",
+      "title": "Software Architecture and Design",
+      "raw_prerequisites": "SYSC 3120 ."
+   },
+   {
+      "code": "SYSC 4130",
+      "credit": "0.5 credit",
+      "title": "Human Computer Interaction\u200b",
+      "raw_prerequisites": "SYSC 3020 or SYSC 3120 ."
+   },
+   {
+      "code": "SYSC 4201",
+      "credit": "0.5 credit",
+      "title": "Ethics, Research Methods and Standards for Biomedical Engineering",
+      "raw_prerequisites": "ECOR 2050 and third year standing in Biomedical and Electrical Engineering or Biomedical and Mechanical Engineering."
+   },
+   {
+      "code": "SYSC 4202",
+      "credit": "0.5 credit",
+      "title": "Clinical Engineering",
+      "raw_prerequisites": "fourth-year standing in Biomedical and Electrical Engineering or Biomedical and Mechanical Engineering. Also offered at the graduate level, with different requirements, as BIOM 5406 , for which additional credit is precluded."
+   },
+   {
+      "code": "SYSC 4203",
+      "credit": "0.5 credit",
+      "title": "Bioinstrumentation and Signals",
+      "raw_prerequisites": "SYSC 3610 and ( ELEC 3605 or SYSC 3203 ) and enrolment in Biomedical and Electrical Engineering or  Biomedical and Mechanical Engineering."
+   },
+   {
+      "code": "SYSC 4205",
+      "credit": "0.5 credit",
+      "title": "Image Processing for Medical Applications",
+      "raw_prerequisites": "SYSC 3600 or SYSC 3610 ."
+   },
+   {
+      "code": "SYSC 4206",
+      "credit": "0.5 credit",
+      "title": "Surgical Robotics",
+      "raw_prerequisites": "SYSC 3600 or SYSC 3610 ."
+   },
+   {
+      "code": "SYSC 4310",
+      "credit": "0.5 credit",
+      "title": "Computer Systems Architecture",
+      "raw_prerequisites": "SYSC 3320 , and enrolment in Computer Systems Engineering."
+   },
+   {
+      "code": "SYSC 4320",
+      "credit": "0.5 credit",
+      "title": "Case Studies in Computer Systems",
+      "raw_prerequisites": "SYSC 4310 , and enrolment in Computer Systems Engineering."
+   },
+   {
+      "code": "SYSC 4405",
+      "credit": "0.5 credit",
+      "title": "Digital Signal Processing",
+      "raw_prerequisites": "SYSC 3500 or SYSC 3600 or SYSC 3610 ."
+   },
+   {
+      "code": "SYSC 4415",
+      "credit": "0.5 credit",
+      "title": "Introduction to Machine Learning",
+      "raw_prerequisites": "( ECOR 2050 or STAT 3502 or STAT 2605 or SYSC 2510 ), ( SYSC 1006 or SYSC 2006 ) and third year standing."
+   },
+   {
+      "code": "SYSC 4416",
+      "credit": "0.5 credit",
+      "title": "Artificial Intelligence in Engineering",
+      "raw_prerequisites": "( ECOR 2050 or STAT 2605 or STAT 3502 or SYSC 2510 ), ( SYSC 1006 or SYSC 2006 ) and third year standing."
+   },
+   {
+      "code": "SYSC 4502",
+      "credit": "0.5 credit",
+      "title": "Communications Software",
+      "raw_prerequisites": "( SYSC 1006 or SYSC 2006 ) with a minimum grade of C- , and SYSC 4602 ."
+   },
+   {
+      "code": "SYSC 4504",
+      "credit": "0.5 credit",
+      "title": "Fundamentals of Web Development",
+      "raw_prerequisites": "SYSC 2004 . Additional recommended background: SYSC 4602 or SYSC 3303 ."
+   },
+   {
+      "code": "SYSC 4505",
+      "credit": "0.5 credit",
+      "title": "Automatic Control Systems I",
+      "raw_prerequisites": "MATH 2004 and ( SYSC 3500 or SYSC 3600 or SYSC 3610 )."
+   },
+   {
+      "code": "SYSC 4511",
+      "credit": "0.5 credit",
+      "title": "Digital Wireless Communication",
+      "raw_prerequisites": "SYSC 3501 and ECOR 2050 ."
+   },
+   {
+      "code": "SYSC 4600",
+      "credit": "0.5 credit",
+      "title": "Digital Communications",
+      "raw_prerequisites": "SYSC 3501 and ECOR 2050 ."
+   },
+   {
+      "code": "SYSC 4602",
+      "credit": "0.5 credit",
+      "title": "Computer Communications",
+      "raw_prerequisites": "ECOR 2050 or SYSC 2510 or STAT 2605 or STAT 3502 (may be taken concurrently), and third year standing in Biomedical and Electrical, Electrical, Communications, Computer Systems, Software, or Sustainable and Renewable Energy Engineering."
+   },
+   {
+      "code": "SYSC 4604",
+      "credit": "0.5 credit",
+      "title": "Digital Communication Theory",
+      "raw_prerequisites": "SYSC 3503 ."
+   },
+   {
+      "code": "SYSC 4607",
+      "credit": "0.5 credit",
+      "title": "Wireless Communications",
+      "raw_prerequisites": "SYSC 3501 or SYSC 3503 ."
+   },
+   {
+      "code": "SYSC 4700",
+      "credit": "0.5 credit",
+      "title": "Topics in Communications Networks",
+      "raw_prerequisites": "SYSC 3501 or SYSC 3503 ."
+   },
+   {
+      "code": "SYSC 4701",
+      "credit": "0.5 credit",
+      "title": "Communications Systems Lab",
+      "raw_prerequisites": "SYSC 4602 and enrolment in Communications Engineering or permission of the department."
+   },
+   {
+      "code": "SYSC 4709",
+      "credit": "0.5 credit",
+      "title": "Industrial Automation",
+      "raw_prerequisites": "third-year standing."
+   },
+   {
+      "code": "SYSC 4805",
+      "credit": "0.5 credit",
+      "title": "Computer Systems Design Lab",
+      "raw_prerequisites": "SYSC 3310 and enrolment in Computer Systems Engineering."
+   },
+   {
+      "code": "SYSC 4806",
+      "credit": "0.5 credit",
+      "title": "Software Engineering Lab",
+      "raw_prerequisites": "COMP 3005 , SYSC 3110 , and enrolment in Software Engineering, or permission of the department."
+   },
+   {
+      "code": "SYSC 4810",
+      "credit": "0.5 credit",
+      "title": "Introduction to Network and Software Security",
+      "raw_prerequisites": "fourth-year standing in Communications, Computer Systems, or Software Engineering."
+   },
+   {
+      "code": "SYSC 4906",
+      "credit": "0.5 credit",
+      "title": "Special Topics",
+      "raw_prerequisites": "permission of the Department."
+   },
+   {
+      "code": "SYSC 4907",
+      "credit": "1.0 credit",
+      "title": "Engineering Project",
+      "raw_prerequisites": "( ECOR 3800 or SYSC 4106 ), and ECOR 4995 (may be taken concurrently), and fourth-year standing.  Certain projects may have additional prerequisites."
+   },
+   {
+      "code": "SYSC 4918",
+      "credit": "0.5 credit",
+      "title": "Undergraduate Directed Study",
+      "raw_prerequisites": "Permission of the department and completion of, or concurrent registration in, one of SYSC 4907 , ELEC 4907 , or ECOR 4907 . Directed study."
+   }
+]

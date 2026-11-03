@@ -24,7 +24,6 @@ def parse_course_data(soup):
     
     for block in course_blocks:
         
-        # Default values for keys if smth is missing
         code = None
         credit = None
         title = None
@@ -35,18 +34,13 @@ def parse_course_data(soup):
         if course_title:
             title_text = course_title.get_text(separator=" ", strip=True).replace("\xa0", " ")
             
-            elements = [element.strip() for element in re.split(r'\[|\]', title_text) if element.strip()]    # Using Regex, split() and strip() to split the course title
+            elements = [element.strip() for element in re.split(r'\[|\]', title_text) if element.strip()]    
             
-            # Since there might not be mathcing prereqs, NameError and others can occur, fix
-            
-            # Check the length
             if len(elements) >= 3:
                 code = elements[0]
                 credit = elements[1]
                 title = elements[2]
             
-        
-                
         course_prereq = block.select_one('div.coursedescadditional')
                 
         if course_prereq:  
@@ -59,7 +53,7 @@ def parse_course_data(soup):
             if match:
                 raw_prereq = match.group(1).strip()
     
-        courses_dict = {   # put the course elements into dict, elements index match with the split text; match for raw prereq
+        courses_dict = {
                     
                 "code": code,
                 "credit": credit,
@@ -69,12 +63,12 @@ def parse_course_data(soup):
             }
         
         courses_list.append(courses_dict)
-        
-    course_json = json.dumps(courses_list)  #convert to json
     
-    print(course_json)
-
-        
+    # save file locally instead
+    
+    with open("course_parse.json", mode="w", encoding="utf-8") as file:
+        json.dump(courses_list, file, indent = 3)
+  
         
 if __name__ == "__main__":
   soup = get_course_page()
