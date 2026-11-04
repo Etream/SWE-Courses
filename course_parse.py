@@ -49,22 +49,32 @@ def parse_course_data(soup):
                         
             match = re.search(r"Prerequisite\(s\):\s*(.*?)(?=\b(?:Lectures|Laboratory|Precludes|Also listed)\b|$)", prereq_desc) 
             
-            # Now use match.group(1) for value of key "raw_prerequisites"
+            # For React DAG, we need to get all the prerequisites in a cleaner list for the nodes 
+            
+            #TODO: We'll use Regex to find the 'XXXX ####' pattern all course codes have and find them in the raw_prereq test.
+            
+            
             if match:
                 raw_prereq = match.group(1).strip()
+                
+        # Check if the raw_prereq has string in it
+        
+        if raw_prereq:
+            prereq_parsed = re.findall(r"([A-Z]{4}\s*\d{4})", raw_prereq)
     
         courses_dict = {
                     
                 "code": code,
                 "credit": credit,
                 "title": title,
-                "raw_prerequisites": raw_prereq
+                "raw_prerequisites": raw_prereq,
+                "prerequisites" : prereq_parsed  # This will be our clean list for React DAG
                     
             }
         
         courses_list.append(courses_dict)
     
-    # save file locally instead
+    
     
     with open("course_parse.json", mode="w", encoding="utf-8") as file:
         json.dump(courses_list, file, indent = 3)
