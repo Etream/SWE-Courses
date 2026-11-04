@@ -106,9 +106,9 @@ python scraper.py
 - [x] **Phase 1: Data Ingestion & Scraper**
   - [x] Connect to Carleton course catalog pages (COMP, SYSC).
   - [x] Safely scope and parse DOM elements (`div.courseblock`) to map titles to their respective raw prerequisites.
-- [ ] **Phase 2: Text Normalization & JSON Structure**
-  - [ ] Implement Regex parsing to convert natural language prerequisite strings into structured boolean dependency trees (AND/OR logic).
-  - [ ] Export structured data to a clean JSON format.
+- [x] **Phase 2: Text Normalization & JSON Structure**
+  - [x] Implement Regex parsing to convert natural language prerequisite strings into structured boolean dependency trees (AND/OR logic).
+  - [x] Export structured data to a clean JSON format.
 - [ ] **Phase 3: Interactive Visual Graph**
   - [ ] Set up a React frontend.
   - [ ] Integrate React Flow to render nodes and directed edges for course dependencies.
